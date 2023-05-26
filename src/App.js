@@ -4,22 +4,22 @@ import { useState } from "react";
 import React from "react";
 import Todo from "./components/Todo";
 import TodoList from "./components/TodoList";
-function App () {
+function App() {
   const [todo, setTodo] = useState("");
   const [todoList, setTodoList] = useState([]);
 
-    return (
-        <div className="App">
-           <Header></Header>
-           <Form 
-           todo={todo}
-            setTodo={setTodo}
-             todoList={todoList} 
-             setTodoList={setTodoList}
-             ></Form>
-             <TodoList setTodoList={setTodoList} todoList={todoList}  />
-        </div>
-    );
+  return (
+    <div className="App">
+      <Header></Header>
+      <Form
+        todo={todo}
+        setTodo={setTodo}
+        todoList={todoList}
+        setTodoList={setTodoList}
+      ></Form>
+      <TodoList setTodoList={setTodoList} todoList={todoList} />
+    </div>
+  );
 }
 
 export default App;

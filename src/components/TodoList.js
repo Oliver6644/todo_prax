@@ -1,17 +1,17 @@
 import Todo from "./Todo";
-const TodoList = ({todoList, setTodoList}) => {
-    return (
+const TodoList = ({ todoList, setTodoList }) => {
+  return (
     <div>
-        {todoList.map((todoItem) => (
-         <Todo
-           setTodoList={setTodoList}
-           key={todoItem.id}
-           todoItem={todoItem} 
-           todoList={todoList}
-           ></Todo>
-        ))}  
+      {todoList.map((todoItem) => (
+        <Todo
+          setTodoList={setTodoList}
+          key={todoItem.id}
+          todoItem={todoItem}
+          todoList={todoList}
+        ></Todo>
+      ))}
     </div>
- );
+  );
 };
 
 export default TodoList;
